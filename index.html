@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Suvrey Form</title>
+    <meta name="description" content="freecodecamp survey form project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">Form</h1>
+        <p id="description">Employee Questionnaire Survey</p>
+        <div class="inner">
+            <form id="survey-form" class="form" name="survey" method="POST" data-netlify="true">
+                <label id="name-label">Name: <br>
+                    <input id="name" type="text" name="name" placeholder="First Name" required></label><br>
+                <label id="email-label">Email:<br>
+                    <input id="email" type="email" placeholder="Email Address" required></label><br>
+                <label id="number-label">Service Rating 0 - 5:<br>
+                    <input type="number" id="number" min="0" max="5" placeholder="0"></label><br>
+
+                <label for="options">Satisfaction:</label><br>
+
+                <select name="options" id="dropdown">
+                    <option value="Select Option">Select Option</option>
+                    <option value="Best">Best</option>
+                    <option value="Better">Better</option>
+                    <option value="Good">Good</option>
+                    <option value="Fair">Fair</option>
+                </select>
+                <br>
+                <br>
+                <label>Select your position:<br>
+                    <input type="radio" id="general labor" name="employee_survey" value="General Labor">
+                    <label for="general labor">General Labor</label>
+                    <input type="radio" id="management" name="employee_survey" value="Management">
+                    <label for="management">Management</label>
+                    <input type="radio" id="temp" name="employee_survey" value="Temp">
+                    <label for="temp">Temp</label>
+                </label>
+                <br><br>
+                <label>Select your transportation:<br>
+                    <input type="checkbox" id="bus" name="bus" value="Bus">
+                    <label for="bus"> I take a bus</label>
+                    <input type="checkbox" id="vehicle" name="vehicle" value="Car">
+                    <label for="vehicle"> I have a car</label>
+                    <input type="checkbox" id="other" name="other" value="Other">
+                    <label for="other"> Other</label></label><br>
+                <br>
+                <Label>Text Area:<br> <textarea maxlength="140"></textarea></Label><br>
+                <input id="submit" type="submit"></button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
